@@ -36,7 +36,7 @@ public class DI_T1A1_Ap42_Ej3Css extends Application {
         //Introducimos un título a la ventana emergente
         primaryStage.setTitle("JavaFX Welcome");
         //Mostramos la ventana emergente
-        primaryStage.show();
+        
 
         
         //Parte 2.1 ...
@@ -55,8 +55,7 @@ public class DI_T1A1_Ap42_Ej3Css extends Application {
         //Parte 3
         //Añadimos un titulo para la escena
         Text scenetitle = new Text("Welcome");
-        //Seleccionamos la familia, el tamaño y el peso de la fuente
-        scenetitle.setFont(Font.font("Tahoma", FontWeight.NORMAL, 20));
+        
         //Añadimos el lugar donde se encuentra dentro del grid, y que ocupa 2 columnas y 1 fila
         grid.add(scenetitle, 0, 0, 2, 1);
 
@@ -106,8 +105,7 @@ public class DI_T1A1_Ap42_Ej3Css extends Application {
             @Override
             //Método manejador del evento de acción
             public void handle(ActionEvent e) {
-                //Añade el color FIREBRICK al texto de actiontarget
-                actiontarget.setFill(Color.FIREBRICK);
+                
                 //Introduce el mensaje tras haber pulsado el boton en el texto actiontarget
                 actiontarget.setText("Sign in button pressed");
             }
@@ -119,7 +117,10 @@ public class DI_T1A1_Ap42_Ej3Css extends Application {
         Scene scene = new Scene(grid, 300, 275);
         //Incluimos la escena dentro de la Stage
         primaryStage.setScene(scene);
-
+        //Añadimos el css a la escena
+        scene.getStylesheets().add
+            (DI_T1A1_Ap42_Ej3Css.class.getResource("/resources/css/StyleFancyForm.css").toExternalForm());
+        primaryStage.show();    
     }
 
     /**
