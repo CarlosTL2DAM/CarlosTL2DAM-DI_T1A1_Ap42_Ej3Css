@@ -8,14 +8,31 @@ and open the template in the editor.
     Author     : Carlos Torres Liñán
 */
 
+
+/*Añadimos fondo al root*/
 .root{
     -fx-background-image: url("../images/background.jpg");
 }
 
-
+/*Añadimos al label sus características*/
 .label{
     -fx-font-size: 12px;
     -fx-font-weight: bold;
     -fx-text-fill: #333333;
     -fx-effect: dropshadow( gaussian, rgba(255,255,255,0.5), 0,0,0,1);
+}
+
+/*Añadimos el estilo al id denominado welcome text*/
+#welcome-text {
+    -fx-font-size:32px;
+    -fx-font-family: "Arial Black";
+    -fx-fill: #818181;
+    -fx-effect: innershadow (gaussian, rgba(255,255,255,0.5), 0,0,0,1);
+}
+
+/*Añadimos el estilo al id denominado actiontarget*/
+#actiontarget{
+    -fx-fill: firebrick;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(255,255,255,0.5), 0,0,0,1);
 }

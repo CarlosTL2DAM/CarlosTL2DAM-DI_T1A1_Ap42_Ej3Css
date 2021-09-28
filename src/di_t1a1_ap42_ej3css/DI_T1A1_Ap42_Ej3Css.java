@@ -55,10 +55,12 @@ public class DI_T1A1_Ap42_Ej3Css extends Application {
         //Parte 3
         //Añadimos un titulo para la escena
         Text scenetitle = new Text("Welcome");
-        
+        //Añadimos ID a scenetitle
+        scenetitle.setId("welcome-text");
         //Añadimos el lugar donde se encuentra dentro del grid, y que ocupa 2 columnas y 1 fila
         grid.add(scenetitle, 0, 0, 2, 1);
-
+        
+        
         //Creamos el primer label y añadimos su texto
         Label userName = new Label("User Name: ");
         //Añadimos la etiqueta en el grid, en la posición Columna 0 Fila 1
@@ -98,7 +100,7 @@ public class DI_T1A1_Ap42_Ej3Css extends Application {
         final Text actiontarget = new Text();
         //Lo almacena en la posición Columna 1 Fila 6
         grid.add(actiontarget, 1, 6);
-
+        actiontarget.setId("actiontarget");
         //El método Set On Action permite regitrar un evento controlador, en este caso Evento de accion
         //El evento de accion es un evento en relación a que se realiza una acción, en este caso dar clic al botón
         btn.setOnAction(new EventHandler<ActionEvent>() {
