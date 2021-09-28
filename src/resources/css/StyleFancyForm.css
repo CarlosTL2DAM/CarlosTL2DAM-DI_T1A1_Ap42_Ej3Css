@@ -11,28 +11,62 @@ and open the template in the editor.
 
 /*Añadimos fondo al root*/
 .root{
+    /*Añadimos imagen de fondo añadida por url*/
     -fx-background-image: url("../images/background.jpg");
 }
 
 /*Añadimos al label sus características*/
 .label{
+    /*Añadimos tamaño de la fuente*/
     -fx-font-size: 12px;
+    /*Añadimos peso de la fuente*/
     -fx-font-weight: bold;
+    /*Añadimos color del texto*/
     -fx-text-fill: #333333;
+    /*Añadimos efecto*/
     -fx-effect: dropshadow( gaussian, rgba(255,255,255,0.5), 0,0,0,1);
 }
 
 /*Añadimos el estilo al id denominado welcome text*/
 #welcome-text {
-    -fx-font-size:32px;
-    -fx-font-family: "Arial Black";
-    -fx-fill: #818181;
-    -fx-effect: innershadow (gaussian, rgba(255,255,255,0.5), 0,0,0,1);
+    /*Añadimos tamaño de la fuente*/
+   -fx-font-size: 32px;
+    /*Añadimos peso de la fuente*/
+   -fx-font-family: "Arial Black";
+   /*Añadimos color del texto*/
+   -fx-fill: #818181;
+    /*Añadimos efecto*/
+   -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
 }
+
+
 
 /*Añadimos el estilo al id denominado actiontarget*/
 #actiontarget{
+    /*Añadimos coor de texto*/
     -fx-fill: firebrick;
+    /*Añadimos peso de fuente*/
     -fx-font-weight: bold;
+    /*Aádimos efecto*/
     -fx-effect: dropshadow(gaussian, rgba(255,255,255,0.5), 0,0,0,1);
+}
+
+/*Añadimos estilo al botón*/
+.button{
+    /*Añadimos color de texto*/
+    -fx-text-fill: white;
+    /*Añadimos tipo de fuente*/
+    -fx-font-family: "Arial Narrow";
+    /*Añadimos peso de fuente*/
+    -fx-font-weight: bold;
+    /*Añadimos color de fondo, de tipo gradiente*/
+    -fx-background-color: linear-gradient(#61a2b1, #2A5058);
+    /*Añadimos efecto*/
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 5, 0.0, 0, 1);
+}
+
+/*Añadimos estilo cuando el ratón se situa sobre el botón*/
+.button:hover {
+    /*Cambiamos el tipo de color de fondo cuando el ratón está sobre el botón*/
+    -fx-background-color: linear-gradient(#2A5058, #61a2b1);
 }
